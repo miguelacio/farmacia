@@ -37,7 +37,7 @@ public class RecordActivity extends AppCompatActivity {
         ArrayList<Compra> compras = new ArrayList<>();
 
 
-        Cursor row = sqlDB.rawQuery("select * from compra ", null);
+        Cursor row = sqlDB.rawQuery("select * from compra", null);
         if (row.moveToFirst()) {
             do {
 
@@ -48,6 +48,8 @@ public class RecordActivity extends AppCompatActivity {
 
             } while (row.moveToNext());
         }
+
+        sqlDB.close();
         compraAdapter = new CompraAdapter(compras);
         recyclerView.setAdapter(compraAdapter);
     }
