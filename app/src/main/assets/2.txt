@@ -1,0 +1,6 @@
+0001|Mejoralito|10
+0002|Vicvaporud|20
+0003|Metanfetaminas|120
+0004|Paracetamol|25
+
+
